@@ -25,7 +25,8 @@ class GuardarServicio extends FormRequest
     {
         return [
             "nombre" => "required",
-            "descripcion" => "required"
+            "descripcion" => "required",
+            "imagen" => "required|image|max:2024",
         ];
     }
 }

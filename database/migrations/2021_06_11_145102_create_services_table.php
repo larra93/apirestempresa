@@ -18,6 +18,8 @@ class CreateServicesTable extends Migration
             $table->string('nombre');
             $table->longText('descripcion');
             $table->enum('status',[1,2] )->default(1);
+            $table->string('imagen');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
