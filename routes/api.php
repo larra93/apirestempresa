@@ -22,4 +22,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('servicios', [ ServicesController::class,'index']);
 Route::post('servicios', [ ServicesController::class,'store']);
 Route::get('servicios/{servicio}', [ ServicesController::class,'show']);
-Route::put('servicios/{servicio}', [ ServicesController::class,'update']);
+Route::post('servicios/{id}', [ ServicesController::class,'update']);

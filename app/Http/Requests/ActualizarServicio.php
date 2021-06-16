@@ -25,7 +25,8 @@ class ActualizarServicio extends FormRequest
     {
         return [
             "nombre" => "required",
-            "descripcion" => "required"
+            "descripcion" => "required",
+            "imagen" => "image|mimes:jpg,jpeg,png"
         ];
     }
 }
